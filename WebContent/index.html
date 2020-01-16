@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>My Safe Square</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="js/my.js"></script>
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-color: #f2f2f2; /* Green */
+    color: #000000;
+  }
+  .bg-2 { 
+    background-color: #55ff00/* #474e5d */; /* Dark Blue */
+    color: #000000;
+  }
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" id="sign_login">My page</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">About MSS</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">PR</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">Did you find a Threat?</h3>
+  <img src="./img/chain.png" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+  <h3>Please report to "MY SAFE SQUARE"</h3>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center" id="content_main">
+  <h3 class="margin">Blockchain Threat Alert System</h3>
+  <p>Our life at a speed much faster than that of industrial revolution of the past.
+Amid the many rapid changes, hacking and virus get more and more burdensome in promoting safe Internet culture over the time.
+
+Almost all systems connected to the super-high speed Internet network are attacked every several minutes or even every several seconds while users are not acknowledged.
+
+In particular, hacking and virus attacks of which intention is to immobilize internet service itself are launched several times.
+
+In other words, hacking and virus attacks are delivered fatal and large in scale.
+
+To cope with this, <strong>("My Safe-Square")</strong> has devoted its energy to effective countermeasures to hacking and viruses such as cyber attack countermeasure methodology and technical response to attack tools.
+
+To prevent the infringement cases and minimize the damage in Global, "MSS" will take the lead in raising technical capability for protection of Critical Network Infrastructure, Internet communication network and for reinforcement of prediction and alarm system.
+</p>
+  <a href="#" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-search"></span> Search
+  </a>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">What type of product vulnerability am I reporting?</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>IT Infrastructure</p>
+      <img src="./img/server.jpg" class="img-responsive margin" style="width:100%; height:400px" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Opensource Blockchain Project</p>
+      <img src="./img/blockchain.jpg" class="img-responsive margin" style="width:100%; height:400px" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Other Opensource Project</p>
+      <img src="./img/opensource.png" class="img-responsive margin" style="width:100%; height:400px" alt="Image">
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+    <div class="footer-left">
+        <p>2020 © SafeSquare. Ltd.</p>
+    </div>
+    <div class="footer-right">
+        <p>Privacy Policy</p>
+        <p>Terms of Service</p>
+    </div>
+</footer>
+
+</body>
+</html>
