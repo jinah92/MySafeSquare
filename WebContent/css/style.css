@@ -1,28 +1,23 @@
-*{box-sizing:border-box;}
-#header{background:indigo;color:white;font-size:60px;
+#header{background:blue; font-size:100px;color:white;
+    text-align:center;
 }
-#menu{background:springgreen;color:black;height:15%;
-	z-index:1;overflow:hidden;
+.menu{background:lightblue; color:black;
+    z-index:1;overflow:hidden;
 }
-#menu a{display:inline-block;padding:7px 10px; text-decoration:none;
+.menu li{display:inline-block;padding:7px 10px; text-decoration:none;
 }
-#menu a:hover{background-color:seagreen; color:white;}
-#header,#menu{text-align:center;}
-#content_name{text-align:center;}
-#content_spec{text-align:center;}
-#sign_icon {background:black;color:black;height:15%;
-	z-index:1;overflow:hidden; box-shadow:3px 3px 5px darkblue;
-	border-radius: 10px 10px; text-align:center;float:right; width:100px;
-	text-shadow:1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; color:white; 
+.menu li:hover{background-color:seagreen; color:white;}	
+.dropdown-content{display: none; position: absolute;
+    background: ghostwhite; box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
-li {display:inline;}
-li.dropdown{display:inline-block;}
-.dropdown-content{display:none;position:absolute;}
-.dropdown-content a{display:block; padding:12px 16px;
-	text-decoration:none; color:black;
+.dropdown-content div{display: block; padding: 12px 16px;
+    text-decoration: none; text-align: left; color: black;
 }
-.dropdown:hover .dropdown-content{display:block;}
+.dropdown-content div:hover{background: pink;} 
 
+ul{margin:0;}
+li.dropdown{display: inline-block;}
+span.content-head-name{text-align: center; height: 74px;}
 
-
-
+.footer-left, .footer-right{display: inline-block;}
+.footer-right p{float:right;}
