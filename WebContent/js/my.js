@@ -1,4 +1,21 @@
 $(document).ready(function(){
+	$(document).on("click", "#logout", function(){
+		// alert();
+		let temp = {sign:"logout"};
+		let jsonOBJ = JSON.stringify(temp);
+
+		$.ajax({url:"main", 
+			type:"POST", 
+			data:jsonOBJ, 
+			dataType:"json",
+			success: function(returnData){
+					alert(returnData.message);
+			},
+			error: function(err) {
+				alert(err);
+			}
+		});
+	});
 	
 	$('#sign_login').click(function(){
 		let login_html_content='<h1>로그인</h1>';
@@ -13,22 +30,34 @@ $(document).ready(function(){
 	$(document).on("click", "#login_b", function(){
 		let id=$('#form_id').val();
 		let pw=$('#form_pw').val();
-		alert(id + ":" + pw);
-/*		$.ajax({url:"MainServlet", 
+		let temp = {
+			sign: "login",
+			id:id,		// "key": value
+			pw:pw
+		};
+		var jsonOBJ=JSON.stringify(temp);	// stringity메서드: javascript객체 => json객체
+//		alert(jsonOBJ);
+		$.ajax({url:"main", 
 			type:"POST", 
 			data:jsonOBJ, 
 			dataType:"json",
-			success:function(jsonObj){
-				if(jsonObj.result==1){
-					$("#login").html(jsonObj.message+"<br><input type='button' value='logout'/>");
-				}else if(jsonObj.result==2){
-					alert(jsonObj.message);
+			success: function(returnData){
+				if (returnData.resultCode==1){
+					alert(returnData.message);
+					$('#login_b').hide();
+					$('#login_div').html("<a class='navbar-brand' href='#' id='logout'>Log-out</a>");
+					$('#content_main').html("<img src='img/bird.jpg' width='300'>");
+
 				}
+				else if (returnData.resultCode==0){
+					alert(returnData.message);
+				}
+				
 			},
-	        error: function() {
-	            alert('Ajax readyState: '+xhr.readyState+'\nstatus: '+xhr.status + ' ' + err);
+	        error: function(err) {
+	            alert(err);
 	        }
-		});*/
+		});
 	});
 	
 	
