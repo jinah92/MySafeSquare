@@ -11,48 +11,13 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="js/my.js"></script>
   <style>
-  body {
-    font: 20px Montserrat, sans-serif;
-    line-height: 1.8;
-    color: #f5f6f7;
-  }
-  p {font-size: 16px;}
-  .margin {margin-bottom: 45px;}
-  .bg-1 { 
-    background-color: #f2f2f2; /* Green */
-    color: #000000;
-  }
-  .bg-2 { 
-    background-color: #55ff00/* #474e5d */; /* Dark Blue */
-    color: #000000;
-  }
-  .bg-3 { 
-    background-color: #ffffff; /* White */
-    color: #555555;
-  }
-  .bg-4 { 
-    background-color: #2f2f2f; /* Black Gray */
-    color: #fff;
-  }
-  .container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-  .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
-  }
-  .navbar-nav  li a:hover {
-    color: #1abc9c !important;
-  }
+    @import "css/main.css";
   </style>
 </head>
 <body>
+
+
+</div>
 
 <!-- Navbar -->
 <nav class="navbar navbar-default">
@@ -63,53 +28,52 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <div id="login_div">
-        <a class="navbar-brand" href="#" id="sign_login">My page</a>
+      <div id="login_div2">
+        <a class="navbar-brand" href="#" id="sign_button" style="color:#1abc9c;">My page</a>
+        <a class="navbar-brand" href="#" id="logout" style="color: tomato; display: none ;"><span id="login_name"></span>님, 반갑습니다.<br>Logout</a>
       </div>
     </div>
     
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">About MSS</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Business</a></li>
-        <li><a href="#">PR</a></li>
-        <li><a href="#">Support</a></li>
+        <li><a href="#" id="home_button">Home</a></li>
+        <li><a href="#" id="about_button">About MSS</a></li>
+        <li><a href="#" id="service_button">Services</a></li>
+        <li><a href="#" id="Business_button">Business</a></li>
+        <li><a href="#" id="pr_button">PR</a></li>
+        <li id="support_parent">
+          <a href="#" id="support_button">Support</a>
+          <div id="support_child">
+            <div class="sub_menu">FAQ</div>
+            <div class="sub_menu">Contact Us</div>
+            <div class="sub_menu">Help</div>
+          </div>
+        </li>
+        </div>
       </ul>
     </div>
   </div>
 </nav>
 
 <!-- First Container -->
-<div class="container-fluid bg-1 text-center">
-  <h3 class="margin">Did you find a Threat?</h3>
-  <img src="./img/chain.png" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
-  <h3>Please report to "MY SAFE SQUARE"</h3>
+<div class="container-fluid bg-1 text-center" id="content_1">
+  <h3 class='margin'>Did you find a <strong style='color: red;'>Threat?</strong></h3>
+  <img src='./img/chain.png' class='img-responsive img-circle margin' style='display:inline' alt='Bird' width='350' height='350'>
+  <h3>Please report to <strong style='color: #1abc9c;'>'MY SAFE SQUARE'</strong></h3>
 </div>
 
 <!-- Second Container -->
-<div class="container-fluid bg-2 text-center" id="content_main">
-  <h3 class="margin">Blockchain Threat Alert System</h3>
-  <p>Our life at a speed much faster than that of industrial revolution of the past.
-Amid the many rapid changes, hacking and virus get more and more burdensome in promoting safe Internet culture over the time.
-
-Almost all systems connected to the super-high speed Internet network are attacked every several minutes or even every several seconds while users are not acknowledged.
-
-In particular, hacking and virus attacks of which intention is to immobilize internet service itself are launched several times.
-
-In other words, hacking and virus attacks are delivered fatal and large in scale.
-
-To cope with this, <strong>("My Safe-Square")</strong> has devoted its energy to effective countermeasures to hacking and viruses such as cyber attack countermeasure methodology and technical response to attack tools.
-
-To prevent the infringement cases and minimize the damage in Global, "MSS" will take the lead in raising technical capability for protection of Critical Network Infrastructure, Internet communication network and for reinforcement of prediction and alarm system.
-</p>
-  <a href="#" class="btn btn-default btn-lg">
-    <span class="glyphicon glyphicon-search"></span> Search
-  </a>
+<div class="container-fluid bg-2 text-center" id="content_2">
+  <h3 class='margin'>Blockchain Alert System</h3>
+  <p>Our life at a speed much faster than that of industrial revolution of the past. 
+  Amid the many rapid changes, hacking and virus get more and more burdensome in promoting safe Internet culture over the time. 
+  Almost all systems connected to the super-high speed Internet network are attacked every several minutes or even every several seconds while users are not acknowledged. In particular, hacking and virus attacks of which intention is to immobilize internet service itself are launched several times. In other words, hacking and virus attacks are delivered fatal and large in scale.
+  To cope with this, <strong>('My Safe-Square')</strong> has devoted its energy to effective countermeasures to hacking and viruses such as cyber attack countermeasure methodology and technical response to attack tools. To prevent the infringement cases and minimize the damage in Global, 'MSS' will take the lead in raising technical capability for protection of Critical Network Infrastructure, Internet communication network and for reinforcement of prediction and alarm system. </p>
+  <a href='#' class='btn btn-default btn-lg'><span class='glyphicon glyphicon-search'></span> Search</a></div></div>
 </div>
 
 <!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">    
+<div class="container-fluid bg-3 text-center" id="second_content">    
   <h3 class="margin">What type of product vulnerability am I reporting?</h3><br>
   <div class="row">
     <div class="col-sm-4">

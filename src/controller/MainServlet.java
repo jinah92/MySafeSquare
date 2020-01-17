@@ -22,7 +22,7 @@ public class MainServlet extends HttpServlet {
 
 //		System.out.println(br.readLine());
 		JSONObject obj = (JSONObject)JSONValue.parse(br);
-		String sign = (String) obj.get("sign");
+		String sign = (String)obj.get("sign");
 		if(sign != null){
 			if(sign.equals("login")){
 				String id = (String) obj.get("id"); 
