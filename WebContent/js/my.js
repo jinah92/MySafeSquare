@@ -15,7 +15,7 @@ $(document).ready(function(){
 	login_form += "<div class='row_margin'><div class='input-field col s12'><i class='material-icons prefix'>vpn_key</i><input id='form_pw' name='password' type='password' style=/><label for='password'>Password</label></div></div>";
 	login_form += "<div class='row'><div class='input-field col s12 login-text'><input type='checkbox' id='test6' checked='checked' /><label for='test6' class='pointer-events'>Remember me</label></div></div>";
 	login_form += "<div class='row'><div class='input-field col s12'><button id='login_b' type='submit' class='btn waves-effect waves-light col s12'>Login</button></div><div class='input-field col s12'><a href='#' class='btn waves-effect waves-light col s12 light-blue darken-4'>FACEBOOK Login</a></div></div>";
-	login_form += "<div class='row'><div class='input-field col s6 m6 l6'><p class='row_margin medium'><a href='#' id='register'>Register Now!</a></p></div><div class='input-field col s6 m6 l6'><p class='margin right-align medium-small'><a href='#'>Forgot password ?</a></p></div></div></form></div></div>";
+	login_form += "<div class='row'><div class='input-field col s6 m6 l6'><p class='row_margin medium'><a href='register.html' id='register'>Register Now!</a></p></div><div class='input-field col s6 m6 l6'><p class='margin right-align medium-small'><a href='#'>Forgot password ?</a></p></div></div></form></div></div>";
 	
 	// login_form += "<hr><form id='login_form'>";
 	// login_form += "ID<input id='form_id'><br>";
@@ -117,9 +117,9 @@ $(document).ready(function(){
 	});
 	
 	// 회원가입
-	$(document).on("click", "#register", function(){
-		alert("클릭");
-	});
+	// $(document).on("click", "#register", function(){
+		
+	// });
 
 	// 홈 화면 이동
 	$(document).on("click", "#home_button", function(){
@@ -131,12 +131,12 @@ $(document).ready(function(){
 
 	// About MSS
 	$(document).on("click", "#about_button", function(){
-		$('#first_content').html("<h1><span id='highlight'>Complete</span> to check the latest threats!</h1>");
+		$('#content_1').html("<h1><span id='highlight'>Complete</span> to check the latest threats!</h1>");
 	});
 	
 	// 서비스 소개
 	$(document).on("click", "#service_button", function(){
-		$('#first_content').html("<h1>What <span id='highlight'>Services</span> in My Safe Squre?</h1>");
+		$('#content_1').html("<h1>What <span id='highlight'>Services</span> in My Safe Squre?</h1>");
 	});
 	
 });

@@ -40,6 +40,11 @@ letter-spacing: 5px;
 .navbar-nav  li a:hover {
 color: #1abc9c !important;
 }
+
+#login_div2 a:hover {
+	color: #075347 !important;
+}
+
 .medium-small {
     font-size: 0.9rem;
     margin: 0;
